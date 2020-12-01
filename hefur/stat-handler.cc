@@ -87,6 +87,7 @@ namespace hefur {
       }
 
       tpl->execute(&response, dict);
+      response.setContentType("text/html");
       return true;
    }
 } // namespace hefur
